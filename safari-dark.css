@@ -1,0 +1,58 @@
+/*tabs on bottom*/
+#TabsToolbar {
+	visibility: collapse !important;
+}
+#nav-bar{
+	border-top-width: 0px !important;
+}
+
+
+/*Bookmarks Bar fix*/
+#PersonalToolbar {
+	-moz-box-ordinal-group: 2;
+	background: rgb(20, 20, 20) !important;
+	border-bottom: 1px solid #181818 !important;
+}
+
+.titlebar-placeholder {
+	display: none;
+}
+
+/*Heights*/
+
+/*
+Change the last padding value to 5px for Windows, Linux, or if
+you're using the titlebar
+*/
+#nav-bar {
+	height: 38px !important;
+	padding: 0px 5px 0px 75px !important;
+}
+
+/*Colors*/
+#nav-bar {
+	background: #181818 !important;
+	border-bottom: 1px solid #181818 !important;
+}
+
+#urlbar {
+	background: rgba(70, 70, 70, 0.4) !important;
+	color: rgba(120, 120, 120, 0.6) !important;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+
+/*position window controls*/
+#titlebar-buttonbox-container {
+	margin-left: 5px !important;
+	margin-top: 10.5px !important;
+}
+
+/* remove this weird extra separator mozilla tacks on before the page content */
+#navigator-toolbox::after {
+	display: none !important;
+}
+
+#sidebar-header {
+	background-color: #181818 !important;
+	color: rgba(220, 220, 220, 0.6) !important;
+}

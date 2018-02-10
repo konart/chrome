@@ -1,0 +1,99 @@
+
+#context-navigation, #context-sep-navigation {
+    display: none !important
+}
+
+#navigator-toolbox, #browser-panel, #nav-bar, #TabsToolbar, #sidebar-header {
+	background-color: #181818 !important;
+}
+
+#sidebar-header {
+	color: #a1a1c2 !important;
+}
+
+/* Reduce width of pinned tabs by reducing the left and right padding */
+
+#TabsToolbar .tab-content[pinned] {
+	padding: 	0 9px !important;
+}
+
+/* Move tabs over to right to make room for address bar */
+
+#TabsToolbar {
+	margin: 		0 44px 0 40vw !important;
+	height: 		30px !important;
+	padding-left:	5px !important;
+}
+
+/* Move address bar to titlebar with tabs */
+
+#nav-bar {
+	margin: 		-30px 60vw 0 80px !important;
+	height:			30px !important;
+	border-bottom:	1px solid #9E9E9E !important;
+}
+
+/* URL bar width adjustments */
+
+#urlbar {
+	margin-left:	-3px !important;
+	min-width:		470px !important;
+}
+
+/* Hide bookmark folder icons */
+
+.bookmark-item > .toolbarbutton-icon {
+	display: 	none !important;
+}
+
+/* Minor bookmarks toolbar spacing adjustments */
+
+#personal-bookmarks toolbarbutton.bookmark-item, #personal-bookmarks toolbarbutton {
+	margin: 		 -1px 0px -1px 2px !important;
+	padding: 		 2px 5px 0 5px !important;
+}
+
+/* Remove line under address bar */
+
+#navigator-toolbox::after{
+	content:	none;
+}
+
+#nav-bar {
+	border-bottom: none !important;
+}
+
+/* Affix hamburger menu to top right */
+
+#PanelUI-button{
+	position: 	fixed;
+	top: 		1px;
+	right: 		0px;
+}
+
+/* Hide titlebar placeholder for caption buttons so that padding between tabs and address bar isn't so ridiculously large */
+
+.titlebar-placeholder[type="caption-buttons"] {
+	-moz-box-ordinal-group: 1 !important;
+}
+
+/* Customize toolbar icon size */
+
+toolbar .toolbarbutton-1 > .toolbarbutton-icon {
+	max-width: calc(2 * var(--toolbarbutton-inner-padding) + 14px) !important;
+}
+
+#back-button { margin-left: 4px !important}
+#forward-button { margin-right: 8px !important;}
+
+/* Hide Close Buttons in Tabs */
+
+.tab-close-button {display: none !important;}
+
+/* Hide Toolbar Icon Badges */
+
+/* #PersonalToolbar .toolbarbutton-badge {display: none !important;} */
+
+/* Make Toolbar Buttons Grayscale */
+
+.toolbarbutton-1 {filter: grayscale(100%) !important;}
